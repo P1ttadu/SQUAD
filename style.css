@@ -1,0 +1,25 @@
+body{background-color:#FF3131;}
+h1{
+text-align:center;
+font-family:monospace;
+}	
+.lays{
+  width: 320px;
+  height: 175px;
+  padding: 50px;
+  border: 10px solid;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.l1{
+font-family:monospace;
+font-size:25px;
+}
+.l2{
+font-family:monospace;
+font-size:25px;
+}
+input[type=text]{
+size:25px;
+}

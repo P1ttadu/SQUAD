@@ -1,0 +1,98 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+h1{
+font-family:Tiny5;
+font-size:150px;
+text-align:center;
+color:black; 
+}
+body{
+background-color:#FFFF33;
+}
+p{font-family:monospace;
+ color:black;
+ font-size:25px;
+}
+ul{
+list-style-type:disc;
+font-family:monospace;
+ color:black;
+ font-size:25px;
+}
+a{ width:75px;
+font-family:monospace; 
+display: block;
+  text-align: right;
+  padding: 10px 20px;
+  background-color: black;
+  color: red;
+  border-radius: 4px;
+  text-decoration: none;}
+a:hover{
+background-color:red;
+color:black;
+}
+}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet">
+<head>
+<h1>SQUAD</h1>
+</head>
+<body>
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <img src="https://wallpapers.com/images/hd/naruto-uzumaki-4k-dzklidf7oppuramu.jpg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <img src="https://moewalls.com/wp-content/uploads/2022/11/luffy-straw-hat-one-piece-thumb-728x410.jpg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <img src="https://4kwallpapers.com/images/wallpapers/ichigo-kurosaki-3840x2160-10502.jpg" style="width:100%">
+</div>
+
+</div>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<ul>Hey everyone! I'm thrilled to create this little digital haven where we can connect, share, and explore. Let's dive right in!<br>
+
+<li>About Me: Your friendly chat host. Whether you're a night owl, a bookworm, or just someone who loves a good chat, you're in the right place.<br></li>
+
+<li>What to Expect: Expect randomness, laughter, and genuine conversations. We'll discuss everything from hobbies to lifes quirks. No judgment—just good vibes.<br></li>
+
+<li>Our Space: Feel free to share your thoughts, favorite quotes, or even a virtual high-five. Let's make this chat as cozy as a warm cup of tea.<br></li>
+
+<li>Ready? Let's create memories!<br></li>
+
+<li>Feel free to personalize this introduction further, and enjoy your new group chat!</li><br>
+</ul>
+<a href="validate.php">LET'S CHAT</a>
+</body>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</html>
