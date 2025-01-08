@@ -30,8 +30,10 @@ echo $row['messages']."<br>";
 session_start();
 $usr=$_SESSION['k'];
 $msg=$_POST['id'];
+//msg variable is not taking special characters so we use en to resolve the issue.
+$en=str_replace("'", "''", $msg);
 if($usr!="" and $msg!=""){
-$sql="insert into msg (username,messages) values('$usr','$msg')";
+$sql="insert into msg (username,messages) values('$usr','$en')";
 $query=mysqli_query($conn,$sql);
 header("refresh: 0;");
 }
