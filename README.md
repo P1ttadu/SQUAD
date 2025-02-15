@@ -1,4 +1,4 @@
-!!!!!!! THE SQUAD !!!!!!!
+# THE SQUAD
 
 ![image alt](https://github.com/user-attachments/assets/92bdbe03-5572-49c1-ab90-32b168be84c9)
 
